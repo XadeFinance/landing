@@ -31,7 +31,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/xade-finance"
+                    href="https://github.com/xadefinance"
                     target="_blank"
                     rel="noreferrer"
                   >
