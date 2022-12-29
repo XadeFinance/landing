@@ -1,6 +1,6 @@
 ## Security
 
-Xade takes the security of our software products and services seriously, which includes all source code repositories managed through our GitHub organization i.e. [Xade Finance](https://github.com/xade-finance/)
+Xade takes the security of our software products and services seriously, which includes all source code repositories managed through our GitHub organization i.e. [Xade Finance](https://github.com/xadefinance/)
 
 If you believe you have found a security vulnerability in any Xade-owned repository, please report it to us as described below.
 
