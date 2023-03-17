@@ -2,6 +2,8 @@ import React from "react";
 import "../styles/style.css";
 import video from "../assets/Video.mp4";
 
+
+
 export default function TopSection() {
   return (
     <>
