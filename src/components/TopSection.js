@@ -22,7 +22,7 @@ export default function TopSection() {
           <br />
           <div className="button69">
             <a
-              href="https://app.xade.finance"
+              href="https://testnet.app.xade.finance"
               style={{ textDecoration: "none", color: "black" }}
             >
               Get Started
