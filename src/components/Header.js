@@ -18,6 +18,10 @@ export default function Header() {
               aria-controls="navbarCollapse"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              onClick = {() => {
+                const navbarCollapse = document.getElementById('navbarCollapse');
+                navbarCollapse.classList.toggle('show');
+              }}
             >
               <i className="fas fa-bars text-white" />
               <span data-feather="grid" />
