@@ -49,10 +49,10 @@ export default function Header() {
                     <a
                       className="nav-link page-scroll"
                       target="_blank"
-                      href="https://discord.gg/H7U3nB4Aa8"
+                      href="https://testflight.apple.com/join/ppdLa9dl"
                       rel="noreferrer"
                     >
-                      <div className="tack">Community</div>
+                      <div className="tack">iOS App</div>
                     </a>
                   </li>
                   &nbsp; &nbsp;
@@ -60,10 +60,10 @@ export default function Header() {
                     <a
                       className="nav-link page-scroll"
                       target="_blank"
-                      href="https://app.xade.finance"
+                      href="https://mint.xade.finance/app-universal-release.apk"
                       rel="noreferrer"
                     >
-                      <div className="greytack">Webapp</div>
+                      <div className="greytack">Android App</div>
                     </a>
                   </li>
                 </div>
