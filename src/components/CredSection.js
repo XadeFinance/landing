@@ -13,16 +13,17 @@ const LeftSection = ({ setActiveLine }) => {
       const bottom = top + window.innerHeight;
       const lines = leftSectionRef.current.querySelectorAll(".line");
   
-      let activeIndex = 0;
+      let activeIndex = -1;
       for (let i = 0; i < lines.length; i++) {
         const line = lines[i];
         const rect = line.getBoundingClientRect();
         if (rect.top <= bottom && rect.bottom >= top) {
+          console.log('wot')
           activeIndex = i + 1;
         }
       }
-      console.log(activeIndex)
-      setActiveLine(activeIndex);
+      console.log(activeIndex - 1)
+      setActiveLine(activeIndex - 1);
     };
     
     useEffect(() => {
@@ -36,10 +37,43 @@ const LeftSection = ({ setActiveLine }) => {
   
     return (
       <div className="left-section" ref={leftSectionRef}>
-        <div className="line">This is the first line of text.</div>
-        <div className="line">This is the second line of text.</div>
-        <div className="line">This is the third line of text.</div>
-        <div className="line">This is the fourth line of text.</div>
+        <div className="line">
+          <div style = {{fontSize: '3rem', fontWeight: 500, lineHeight: 1.2}}>
+            Global Payments to any identity in a gasless manner 
+          </div>
+          <br></br>
+          <div style = {{fontSize: '1rem'}}>
+          Send Payments to any email address, mobile number, DID and more in a gasless manner irrespective of the fact whether the recipient has a wallet or not with programmable payments.
+          </div>
+          </div>
+        <div className="line">
+        <div style = {{fontSize: '3rem', fontWeight: 500, lineHeight: 1.2}}>
+        Beat Inflation with a stable savings account 
+
+          </div>
+          <br></br>
+          <div style = {{fontSize: '1rem'}}>
+          Get a savings account created specifically to beat inflation by financing real world loans powered by our innovative savings protocol SabeX.
+</div>
+        </div>
+        <div className="line">
+        <div style = {{fontSize: '3rem', fontWeight: 500, lineHeight: 1.2}}>
+        Speculate on the price of anything like a pro
+          </div>
+          <br></br>
+          <div style = {{fontSize: '1rem'}}>
+          Go Long or Short with upto 10x leverage on stocks, crypto, forex and more powered by DeriveX with almost guranteed liquidity and improved risk engines.
+          </div>
+        </div>
+        <div className="line">
+        <div style = {{fontSize: '3rem', fontWeight: 500, lineHeight: 1.2}}>
+        Finance your loans easily 
+          </div>
+          <br></br>
+          <div style = {{fontSize: '1rem'}}>
+          Finance your real world loans such as EMIs or Mortgages or against ERC-20 Tokens in various manners with no paperwork powered by SabeX.
+          </div>
+        </div>
       </div>
     );
   };
@@ -99,14 +133,14 @@ const LeftSection = ({ setActiveLine }) => {
       {
       gsap.to(imageWrapperRef.current, {
           x: `-=${imageWidth}`,
-          duration: 0.5,
+          duration: 0.2,
         });
       }
       else if(previousActiveLine > activeLine)
       {
       gsap.to(imageWrapperRef.current, {
           x: `+=${imageWidth}`,
-          duration: 0.5,
+          duration: 0.2,
         });
       }
       //   ScrollTrigger.create({
@@ -130,13 +164,13 @@ const LeftSection = ({ setActiveLine }) => {
     const getImage = (lineIndex) => {
       switch (lineIndex) {
         case 1:
-          return "https://dummyimage.com/600x400/000/fff&text=Image+1";
+          return "https://aravbudhiraja.me/images/remmitex.jpg";
         case 2:
-          return "https://dummyimage.com/600x400/111/fff&text=Image+2";
+          return "https://aravbudhiraja.me/images/sabex.jpg";
         case 3:
-          return "https://dummyimage.com/600x400/222/fff&text=Image+3";
+          return "https://aravbudhiraja.me/images/derivex.jpg";
         case 4:
-          return "https://dummyimage.com/600x400/333/fff&text=Image+4";
+          return "https://aravbudhiraja.me/images/sabex.jpg";
         default:
           return "";
       }
