@@ -6,17 +6,18 @@ import ExploreFeatures from "./components/ExploreFeatures";
 import ExploreFeaturesMobile from "./components/ExploreFeaturesMobile";
 import BottomSection from "./components/BottomSection";
 import FAQ from "./components/FAQ";
-
+import CredSection from "./components/CredSection"
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <TopSection />
       <ExploreFeatures />
       <ExploreFeaturesMobile />
       <BottomSection />
       <FAQ />
-      <Footer />
+      <Footer /> */}
+      <CredSection />
     </div>
   );
 }
